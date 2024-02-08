@@ -1,18 +1,22 @@
 ---
-import Section from "@/components/Section.astro";
-import { isLangSpanish } from "@/lib/utils";
-import { projects } from "@cv";
-import { projects as projectsES } from "@cv-es";
+import Section from '@/components/Section.astro'
+import { isLangSpanish } from '@/lib/utils'
+import { projects } from '@cv'
+import { projects as projectsES } from '@cv-es'
+import { projectsTexts, projectsTextsES } from '@texts'
 
 //Translations
-const { url } = Astro.request;
-const isSpanish = isLangSpanish(url);
+const { url } = Astro.request
+const isSpanish = isLangSpanish(url)
 
-const title = isSpanish ? "Proyectos" : "Projects";
-const data = isSpanish ? projectsES : projects;
+const data = isSpanish ? projectsES : projects
+const { title } = isSpanish ? projectsTextsES : projectsTexts
 ---
 
-<Section title={title} customClass="no-print">
+<Section
+    title={title}
+    customClass="no-print"
+>
     <ul>
         {
             data &&

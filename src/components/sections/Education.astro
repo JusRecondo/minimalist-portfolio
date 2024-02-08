@@ -1,15 +1,16 @@
 ---
-import Section from "@/components/Section.astro";
-import { isLangSpanish } from "@/lib/utils";
-import { certificates } from "@cv";
-import { certificates as certificatesES } from "@cv-es";
+import Section from '@/components/Section.astro'
+import { isLangSpanish } from '@/lib/utils'
+import { certificates } from '@cv'
+import { certificates as certificatesES } from '@cv-es'
+import { education, educationES } from '@texts'
 
 //Translations
-const { url } = Astro.request;
-const isSpanish = isLangSpanish(url);
+const { url } = Astro.request
+const isSpanish = isLangSpanish(url)
 
-const title = isSpanish ? "Educación" : "Education";
-const data = isSpanish ? certificatesES : certificates;
+const data = isSpanish ? certificatesES : certificates
+const { title } = isSpanish ? educationES : education
 ---
 
 <Section title={title}>
@@ -17,7 +18,7 @@ const data = isSpanish ? certificatesES : certificates;
         {
             data &&
                 data.map(({ name, url, date, issuer }) => {
-                    const year = new Date(date).getFullYear();
+                    const year = new Date(date).getFullYear()
                     return (
                         <li>
                             <article class="cv-item">
@@ -34,7 +35,7 @@ const data = isSpanish ? certificatesES : certificates;
                                 </a>
                             </article>
                         </li>
-                    );
+                    )
                 })
         }
     </ul>

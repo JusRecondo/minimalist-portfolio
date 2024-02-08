@@ -1,4 +1,14 @@
 {
+    "layout": {
+        "langCode": "en",
+        "name": "Jus Recondo",
+        "description": "Hi! I'm Jus Recondo, Front End Developer and teacher."
+    },
+    "layoutES": {
+        "langCode": "es",
+        "name": "Jus Recondo",
+        "description": "Hola! Soy Jus Recondo, Front End Developer y docente."
+    },
     "header": {
         "langBtnLabel": "es",
         "printBtnLabel": "print",
@@ -31,34 +41,38 @@
     "aboutES": {
         "title": "Sobre mí"
     },
-    "Experience": {
-        "title": ""
+    "experience": {
+        "title": "Work Experience",
+        "present": "Present",
+        "summaryTitle": "Description"
     },
-    "ExperienceES": {
-        "title": ""
+    "experienceES": {
+        "title": "Experiencia Laboral",
+        "present": "Presente",
+        "summaryTitle": "Descripción"
     },
-    "Education": {
-        "title": ""
+    "education": {
+        "title": "Education"
     },
-    "EducationES": {
-        "title": ""
+    "educationES": {
+        "title": "Educación"
     },
-    "Projects": {
-        "title": ""
+    "projectsTexts": {
+        "title": "Projects"
     },
-    "ProjectsES": {
-        "title": ""
+    "projectsTextsES": {
+        "title": "Proyectos"
     },
-    "Skills": {
-        "title": ""
+    "skillsTexts": {
+        "title": "Technologies"
     },
-    "SkillES": {
-        "title": ""
+    "skillsTextsES": {
+        "title": "Tecnologías"
     },
-    "Languages": {
-        "title": ""
+    "languagesTexts": {
+        "title": "Languages"
     },
-    "LanguagesES": {
-        "title": ""
+    "languagesTextsES": {
+        "title": "Lenguajes"
     }
 }

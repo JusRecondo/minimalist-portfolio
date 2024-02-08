@@ -1,41 +1,41 @@
 ---
-import Layout from '@/layouts/Layout.astro';
-import Header from '@/components/Header.astro';
-import Hero from '@/components/sections/Hero.astro';
-import About from '@/components/sections/About.astro';
-import Experience from '@/components/sections/Experience.astro';
-import Education from '@/components/sections/Education.astro';
-import Projects from '@/components/sections/Projects.astro';
-import Skills from '@/components/sections/Skills.astro';
-import Languages from '@/components/sections/Languages.astro';
+import Layout from '@/layouts/Layout.astro'
+import Header from '@/components/Header.astro'
+import Hero from '@/components/sections/Hero.astro'
+import About from '@/components/sections/About.astro'
+import Experience from '@/components/sections/Experience.astro'
+import Education from '@/components/sections/Education.astro'
+import Projects from '@/components/sections/Projects.astro'
+import Skills from '@/components/sections/Skills.astro'
+import Languages from '@/components/sections/Languages.astro'
 
-import { basics as basicsES } from '@cv-es';
+import { basics as basicsES } from '@cv-es'
 
-const { name } = basicsES;
+const { name } = basicsES
 ---
 
 <Layout title={name}>
     <Header />
-	<main>
-		<Hero />
+    <main>
+        <Hero />
         <About />
         <Experience />
         <Education />
-        <Projects class="no-print"/>
+        <Projects class="no-print" />
         <Skills />
         <Languages />
-	</main>
+    </main>
 </Layout>
 
 <style>
-	main {
-		margin: 54px auto 0 auto;
-		padding: 2rem 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-	}
+    main {
+        margin: 54px auto 0 auto;
+        padding: 2rem 1rem;
+        width: 800px;
+        max-width: calc(100% - 2rem);
+    }
 
-	@media print {
+    @media print {
         main {
             margin-top: 20px;
         }
