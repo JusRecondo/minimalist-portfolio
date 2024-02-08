@@ -1,0 +1,104 @@
+---
+import { Icon } from "astro-icon/components";
+import { isLangSpanish } from "@/lib/utils";
+
+//Translations
+const { url } = Astro.request;
+
+const isSpanish = isLangSpanish(url);
+const langBtnLabel = isSpanish ? "en" : "es";
+const printBtnLabel = isSpanish ? "imprimir" : "print";
+---
+
+<header>
+    <button id="theme-btn">
+        <Icon name="dark" title="Activate dark theme" />
+        <Icon name="light" title="Activate light theme" />
+        <span>dark</span>
+    </button>
+    <button id="lang-btn">
+        <Icon name="world" title="Change language" />
+        <span>{langBtnLabel}</span>
+    </button>
+    <button id="print-btn">
+        <Icon name="print" title="Change language" />
+        <span>{printBtnLabel}</span>
+    </button>
+</header>
+
+<style>
+    header {
+        display: flex;
+        justify-content: flex-end;
+        gap: 8px;
+        width: 100%;
+        padding: 1rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: var(--bg-color);
+        height: 54px;
+    }
+
+    @media print {
+        header {
+            display: none;
+        }
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        border-radius: 6px;
+        color: var(--button-icon-color);
+        border: 1px solid var(--button-border);
+        background: transparent;
+        cursor: pointer;
+        padding: 4px 8px;
+    }
+
+    button:hover {
+        background-color: var(--button-hover);
+    }
+</style>
+
+<script>
+    //Theme feature
+    const themeBtn = document.querySelector("#theme-btn");
+    const themeBtnLabel = document.querySelector("#theme-btn span");
+    const html = document.querySelector("html");
+
+    themeBtn?.addEventListener("click", () => {
+        const currentTheme = html?.dataset.theme;
+        if (html && themeBtnLabel) {
+            if (currentTheme === "light") {
+                html.dataset.theme = "dark";
+                themeBtnLabel.textContent = "light";
+            } else {
+                html.dataset.theme = "light";
+                themeBtnLabel.textContent = "dark";
+            }
+        }
+    });
+
+    //Print feature
+    const printBtn = document.querySelector("#print-btn");
+
+    printBtn?.addEventListener("click", () => {
+        window.print();
+    });
+
+    //Translation feature
+    const langBtn = document.querySelector("#lang-btn");
+
+    langBtn?.addEventListener("click", () => {
+        const path = window.location.pathname;
+
+        if (path === "/es") {
+            window.location.pathname = "/";
+        } else {
+            window.location.pathname = "/es";
+        }
+    });
+</script>
