@@ -1,0 +1,193 @@
+{
+    "basics": {
+        "name": "Jus Recondo",
+        "label": "Desarrolladore Front End con más de tres años de experiencia utilizando JavaScript, HTML, CSS y React.",
+        "image": "/image.webp",
+        "email": "justina.recondo@gmail.com",
+        "phone": "+54911 50062896",
+        "summary": "Me apasiona traducir diseños a código y participar en el proceso de diseñar interfaces trabajando codo a codo con el equipo UX/UI. Tengo sólidos conocimientos en HTML, CSS y Javascript lo cual me permite adaptarme y aprender rápidamente nuevas tecnologías y herramientas. Además, mi experiencia como docente me ha permitido fortalecer habilidades de comunicación y trabajo en equipo.",
+        "location": {
+            "city": "Buenos Aires",
+            "country": "Argentina"
+        },
+        "profiles": [
+            {
+                "network": "linkedin",
+                "username": "jusrecondo",
+                "url": "https://www.linkedin.com/in/jusrecondo/"
+            },
+            {
+                "network": "github",
+                "username": "JusRecondo",
+                "url": "https://github.com/JusRecondo"
+            }
+        ]
+    },
+    "work": [
+        {
+            "name": "YouMarket",
+            "position": "Desarrollador Front End",
+            "url": "https://youmarket.com.ar/",
+            "startDate": "2023-04-01",
+            "endDate": null,
+            "summary": [
+                "Trabajo en el mantenimiento e implementación de nuevas funcionalidades en una aplicación web construida con React",
+                "Hago refactorización de código legacy, limpieza de código y librerías en desuso, migración de Class components a Functional components",
+                "Participo en el proceso de rediseñar e implementar componentes junto al area de diseño UX/UI",
+                "Realizo testing manual de accesibilidad web e implemento mejoras para cumplir con las pautas WCAG",
+                "Implemento fixes y nuevas funcionalidades en el Front End a partir de la detección de bugs y a pedido del cliente"
+            ]
+        },
+        {
+            "name": "Eidos Global",
+            "position": "Docente en cursos de Desarrollo Front End (part-time)",
+            "url": "https://www.eidosglobal.org/",
+            "startDate": "2022-03-01",
+            "endDate": "2023-03-01",
+            "summary": [
+                "Desarrollé planificaciones, contenidos y ejercicios para clases de HTML, CSS y JavaScript",
+                "Dicté clases en cursos online"
+            ]
+        },
+        {
+            "name": "Woopi Apps",
+            "position": "Desarrollador Front End",
+            "url": "https://woopi.com.ar/",
+            "startDate": "2022-03-01",
+            "endDate": "2022-10-01",
+            "summary": [
+                "Trabajé en el mantenimiento y desarrollo de nuevas funcionalidades en varios proyectos de la empresa construidos con React",
+                "Integré funcionalidades en el Front End con endpoints de distintos servicios",
+                "Comencé proyectos desde cero con Next.js, React y TypeScript",
+                "Desarrollé componentes custom siguiendo un UI Kit provisto por el equipo de diseño e implementé la visualización de los mismos utilizando Storybook"
+            ]
+        },
+        {
+            "name": "ALT Cooperativa",
+            "position": "Desarrollador Front End y Docente",
+            "url": "https://altcooperativa.com/",
+            "startDate": "2020-11-01",
+            "endDate": "2023-03-01",
+            "summary": [
+                "Desarrollé sitios web responsive desde cero utilizando HTML, CSS, JavaScript React y WordPress (desarrollo de temas personalizados)",
+                "Trabajé en el mantenimiento de sitios web",
+                "Participé en reuniones con clientes ayudando a identificar y definir requerimientos funcionales",
+                "Di clases de Front End en cursos de desarrollo web y ayudé a otros miembros de equipo de desarrollo con menor experiencia"
+            ]
+        }
+    ],
+    "certificates": [
+        {
+            "name": "Desarrollo Web Fullstack (MERN)",
+            "date": "2021-11-01",
+            "issuer": "Media Chicas",
+            "url": "https://www.mediachicas.org/"
+        },
+        {
+            "name": "Desarrollo Web Fullstack",
+            "date": "2018-06-01",
+            "issuer": "Comunidad IT",
+            "url": "https://www.comunidadit.org/"
+        }
+    ],
+    "skills": [
+        {
+            "name": "HTML",
+            "iconName": "html"
+        },
+        {
+            "name": "CSS",
+            "iconName": "css"
+        },
+        {
+            "name": "Sass",
+            "iconName": "sass"
+        },
+        {
+            "name": "Bootstrap",
+            "iconName": "bootstrap"
+        },
+        {
+            "name": "Tailwind",
+            "iconName": "tailwind"
+        },
+        {
+            "name": "Material UI",
+            "iconName": "material"
+        },
+        {
+            "name": "JavaScript",
+            "iconName": "javascript"
+        },
+        {
+            "name": "TypeScript",
+            "iconName": "typescript"
+        },
+        {
+            "name": "JSON",
+            "iconName": "json"
+        },
+        {
+            "name": "React.js",
+            "iconName": "react"
+        },
+        {
+            "name": "Next.js",
+            "iconName": "next"
+        },
+        {
+            "name": "Astro",
+            "iconName": "astro"
+        },
+        {
+            "name": "Git",
+            "iconName": "git"
+        },
+        {
+            "name": "Figma",
+            "iconName": "figma"
+        }
+    ],
+    "languages": [
+        {
+            "language": "Spanish",
+            "fluency": "Nativo"
+        },
+        {
+            "language": "English",
+            "fluency": "Intermedio"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Alt Cooperativa: landing page",
+            "description": "Headless CMS (WordPress) y Front End construido con with React, Sass, Apollo, GraphQL",
+            "url": "https://altcooperativa.com/"
+        },
+        {
+            "name": "Lucia Bonato: portfolio web de artista",
+            "description": "Custom WordPress theme with CSS and JavaScript",
+            "url": "https://enriquetagz.com/"
+        },
+        {
+            "name": "IPJR: sitio web de artista",
+            "description": "Sitio web estático diseñado y realizado con HTML, CSS, Hydra Synth, Firebase hosting",
+            "url": "https://ipjripjr.web.app/"
+        },
+        {
+            "name": "Ire Paz: sitio web de artista",
+            "description": "Sitio web estático diseñado y realizado con with HTML, CSS, Firebase hosting",
+            "url": "https://ire-paz.web.app/"
+        },
+        {
+            "name": "String Synth",
+            "description": "Instrumento musical experimental construido con JavaScript, Web Audio API, HTML, CSS, Hydra Synth",
+            "url": "https://jusrecondo.github.io/string-synth/"
+        },
+        {
+            "name": "W-Synth",
+            "description": "Instrumento musical experimental construido JavaScript, Web Audio API, HTML, CSS",
+            "url": "https://jusrecondo.github.io/w-synth-mobile/"
+        }
+    ]
+}

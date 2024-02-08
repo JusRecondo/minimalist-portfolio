@@ -1,0 +1,193 @@
+{
+    "basics": {
+        "name": "Jus Recondo",
+        "label": "Front End Developer with +3 years of experience building interfaces with JavaScript, HTML, CSS and React.",
+        "image": "/image.webp",
+        "email": "justina.recondo@gmail.com",
+        "phone": "+54911 50062896",
+        "summary": "I enjoy translating designs into code and participate in the design process working closely with the UX/UI team. I have solid skills in HTML, CSS, JavaScript and React, so I can quickly learn new technologies and tools. In addition to that, my teaching experience has helped me boost my communication and teamwork skills.",
+        "location": {
+            "city": "Buenos Aires",
+            "country": "Argentina"
+        },
+        "profiles": [
+            {
+                "network": "linkedin",
+                "username": "jusrecondo",
+                "url": "https://www.linkedin.com/in/jusrecondo/"
+            },
+            {
+                "network": "github",
+                "username": "JusRecondo",
+                "url": "https://github.com/JusRecondo"
+            }
+        ]
+    },
+    "work": [
+        {
+            "name": "YouMarket",
+            "position": "Front End Developer",
+            "url": "https://youmarket.com.ar/",
+            "startDate": "2023-04-01",
+            "endDate": null,
+            "summary": [
+                "Work on maintenance and implementation of new features in a web application built with React",
+                "Refactor legacy code, clean up code, and migrate Class components to Functional components",
+                "Collaborate in the redesign and implementation of components alongside the UX/UI design team",
+                "Perform manual testing for web accessibility and implement improvements to comply with WCAG guidelines",
+                "Implement fixes and new features in the Front End based on bug detection and client requests"
+            ]
+        },
+        {
+            "name": "Eidos Global",
+            "position": "Teacher in Front End Development courses (part-time)",
+            "url": "https://www.eidosglobal.org/",
+            "startDate": "2022-03-01",
+            "endDate": "2023-03-01",
+            "summary": [
+                "Developed lesson plans, content, and exercises for HTML, CSS, and JavaScript classes",
+                "Conducted classes in online courses"
+            ]
+        },
+        {
+            "name": "Woopi Apps",
+            "position": "Front End Developer",
+            "url": "https://woopi.com.ar/",
+            "startDate": "2022-03-01",
+            "endDate": "2022-10-01",
+            "summary": [
+                "Worked on the maintenance and development of new features in various company projects built with React",
+                "Integrated functionalities on the Front End with endpoints from different services",
+                "Initiated projects from scratch using Next.js, React, and Typescript",
+                "Developed custom components following a UI Kit provided by the design team and implemented their visualization using Storybook"
+            ]
+        },
+        {
+            "name": "ALT Cooperativa",
+            "position": "Front End Developer, Teacher",
+            "url": "https://altcooperativa.com/",
+            "startDate": "2020-11-01",
+            "endDate": "2023-03-01",
+            "summary": [
+                "Developed responsive websites from scratch using HTML, CSS, JavaScript, React, and WordPress (custom themes development)",
+                "Engaged in website maintenance tasks",
+                "Participated in client meetings, aiding in the identification and definition of functional requirements",
+                "Conducted Front End classes in web development courses and assisted team members with less experience"
+            ]
+        }
+    ],
+    "certificates": [
+        {
+            "name": "Fullstack Web Development (MERN)",
+            "date": "2021-11-01",
+            "issuer": "Media Chicas",
+            "url": "https://www.mediachicas.org/"
+        },
+        {
+            "name": "Fullstack Web Development",
+            "date": "2018-06-01",
+            "issuer": "Comunidad IT",
+            "url": "https://www.comunidadit.org/"
+        }
+    ],
+    "skills": [
+        {
+            "name": "HTML",
+            "iconName": "html"
+        },
+        {
+            "name": "CSS",
+            "iconName": "css"
+        },
+        {
+            "name": "Sass",
+            "iconName": "sass"
+        },
+        {
+            "name": "Bootstrap",
+            "iconName": "bootstrap"
+        },
+        {
+            "name": "Tailwind",
+            "iconName": "tailwind"
+        },
+        {
+            "name": "Material UI",
+            "iconName": "material"
+        },
+        {
+            "name": "JavaScript",
+            "iconName": "javascript"
+        },
+        {
+            "name": "TypeScript",
+            "iconName": "typescript"
+        },
+        {
+            "name": "JSON",
+            "iconName": "json"
+        },
+        {
+            "name": "React.js",
+            "iconName": "react"
+        },
+        {
+            "name": "Next.js",
+            "iconName": "next"
+        },
+        {
+            "name": "Astro",
+            "iconName": "astro"
+        },
+        {
+            "name": "Git",
+            "iconName": "git"
+        },
+        {
+            "name": "Figma",
+            "iconName": "figma"
+        }
+    ],
+    "languages": [
+        {
+            "language": "Spanish",
+            "fluency": "Native speaker"
+        },
+        {
+            "language": "English",
+            "fluency": "Intermediate"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Alt Cooperativa: landing page",
+            "description": "Headless CMS (WordPress) and Front End built with React, Apollo, GraphQL",
+            "url": "https://altcooperativa.com/"
+        },
+        {
+            "name": "Lucia Bonato: artist portfolio website",
+            "description": "Custom WordPress theme with CSS and JavaScript",
+            "url": "https://enriquetagz.com/"
+        },
+        {
+            "name": "IPJR: artist landing page",
+            "description": "Simple static website built with HTML, CSS, Hydra Synth, Firebase hosting",
+            "url": "https://ipjripjr.web.app/"
+        },
+        {
+            "name": "Ire Paz: artist website",
+            "description": "Simple static website designed and built with HTML, CSS, Firebase hosting",
+            "url": "https://ire-paz.web.app/"
+        },
+        {
+            "name": "String Synth",
+            "description": "Experimental musical instrument built with JavaScript, Web Audio API, HTML, CSS, Hydra Synth",
+            "url": "https://jusrecondo.github.io/string-synth/"
+        },
+        {
+            "name": "W-Synth",
+            "description": "Experimental musical instrument built with JavaScript, Web Audio API, HTML, CSS",
+            "url": "https://jusrecondo.github.io/w-synth-mobile/"
+        }
+    ]
+}
