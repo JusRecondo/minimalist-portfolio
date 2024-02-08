@@ -10,9 +10,6 @@ const { name, image, email, phone, location, profiles } = basics
 
 const { city, country } = location
 
-const linkedInInfo = profiles.find(({ network }) => network === 'linkedin')
-const linkedInUrl = linkedInInfo?.url
-
 //Translations
 const { url } = Astro.request
 const isSpanish = isLangSpanish(url)
@@ -89,7 +86,8 @@ const {
                 }
             </div>
             <div class="contact-info-print">
-                {email} | {phone} | {linkedInUrl}
+                <p>{email} | {phone}</p>
+                {profiles.map(profile => <p>{profile.url}</p>)}
             </div>
         </div>
         <figure>
