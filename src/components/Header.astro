@@ -1,27 +1,46 @@
 ---
-import { Icon } from "astro-icon/components";
-import { isLangSpanish } from "@/lib/utils";
+import { Icon } from 'astro-icon/components'
+import { isLangSpanish } from '@/lib/utils'
+import { header, headerES } from '@texts'
 
 //Translations
-const { url } = Astro.request;
+const { url } = Astro.request
+const isSpanish = isLangSpanish(url)
 
-const isSpanish = isLangSpanish(url);
-const langBtnLabel = isSpanish ? "en" : "es";
-const printBtnLabel = isSpanish ? "imprimir" : "print";
+const {
+    langBtnLabel,
+    printBtnLabel,
+    lightThemeA11yText,
+    darkThemeA11yText,
+    translateA11yText,
+    printA11yText,
+} = isSpanish ? header : headerES
 ---
 
 <header>
     <button id="theme-btn">
-        <Icon name="dark" title="Activate dark theme" />
-        <Icon name="light" title="Activate light theme" />
+        <Icon
+            name="dark"
+            title={darkThemeA11yText}
+        />
+        <Icon
+            name="light"
+            title={lightThemeA11yText}
+        />
         <span>dark</span>
     </button>
     <button id="lang-btn">
-        <Icon name="world" title="Change language" />
+        <Icon
+            name="world"
+            title={translateA11yText}
+        />
         <span>{langBtnLabel}</span>
     </button>
     <button id="print-btn">
-        <Icon name="print" title="Change language" />
+        <Icon
+            name="print"
+            title={printA11yText}
+        />
         <span>{printBtnLabel}</span>
     </button>
 </header>
@@ -51,7 +70,7 @@ const printBtnLabel = isSpanish ? "imprimir" : "print";
         align-items: center;
         gap: 4px;
         border-radius: 6px;
-        color: var(--button-icon-color);
+        color: inherit;
         border: 1px solid var(--button-border);
         background: transparent;
         cursor: pointer;
@@ -65,40 +84,40 @@ const printBtnLabel = isSpanish ? "imprimir" : "print";
 
 <script>
     //Theme feature
-    const themeBtn = document.querySelector("#theme-btn");
-    const themeBtnLabel = document.querySelector("#theme-btn span");
-    const html = document.querySelector("html");
+    const themeBtn = document.querySelector('#theme-btn')
+    const themeBtnLabel = document.querySelector('#theme-btn span')
+    const html = document.querySelector('html')
 
-    themeBtn?.addEventListener("click", () => {
-        const currentTheme = html?.dataset.theme;
+    themeBtn?.addEventListener('click', () => {
+        const currentTheme = html?.dataset.theme
         if (html && themeBtnLabel) {
-            if (currentTheme === "light") {
-                html.dataset.theme = "dark";
-                themeBtnLabel.textContent = "light";
+            if (currentTheme === 'light') {
+                html.dataset.theme = 'dark'
+                themeBtnLabel.textContent = 'light'
             } else {
-                html.dataset.theme = "light";
-                themeBtnLabel.textContent = "dark";
+                html.dataset.theme = 'light'
+                themeBtnLabel.textContent = 'dark'
             }
         }
-    });
+    })
 
     //Print feature
-    const printBtn = document.querySelector("#print-btn");
+    const printBtn = document.querySelector('#print-btn')
 
-    printBtn?.addEventListener("click", () => {
-        window.print();
-    });
+    printBtn?.addEventListener('click', () => {
+        window.print()
+    })
 
     //Translation feature
-    const langBtn = document.querySelector("#lang-btn");
+    const langBtn = document.querySelector('#lang-btn')
 
-    langBtn?.addEventListener("click", () => {
-        const path = window.location.pathname;
+    langBtn?.addEventListener('click', () => {
+        const path = window.location.pathname
 
-        if (path.includes("/es")) {
-            window.location.pathname = "/";
+        if (path.includes('/es')) {
+            window.location.pathname = '/'
         } else {
-            window.location.pathname = "/es";
+            window.location.pathname = '/es'
         }
-    });
+    })
 </script>

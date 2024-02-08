@@ -1,0 +1,18 @@
+{
+    "header": {
+        "langBtnLabel": "es",
+        "printBtnLabel": "print",
+        "lightThemeA11yText": "Activate light theme",
+        "darkThemeA11yText": "Activate dark theme",
+        "translateA11yText": "Change language",
+        "printA11yText": "Print resume"
+    },
+    "headerES": {
+        "langBtnLabel": "en",
+        "printBtnLabel": "imprimir",
+        "lightThemeA11yText": "Activar tema claro",
+        "darkThemeA11yText": "Activar tema oscuro",
+        "translateA11yText": "Cambiar lenguaje",
+        "printA11yText": "Imprimir curriculum"
+    }
+}
