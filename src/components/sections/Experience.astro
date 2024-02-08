@@ -1,0 +1,99 @@
+---
+import Section from "@/components/Section.astro";
+import { isLangSpanish } from "@/lib/utils";
+import { work } from "@cv";
+import { work as workES } from "@cv-es";
+
+//Translations
+const { url } = Astro.request;
+const isSpanish = isLangSpanish(url);
+
+const title = isSpanish ? "Experiencia Laboral" : "Work Experience";
+const data = isSpanish ? workES : work;
+const present = isSpanish ? "Presente" : "Present";
+const summaryTitle = isSpanish ? "Descripción" : "Description";
+---
+
+<Section title={title}>
+    <ul class="cv-list">
+        {
+            data &&
+                data.map(
+                    ({ name, position, url, startDate, endDate, summary }) => {
+                        const startYear = new Date(startDate).getFullYear();
+                        const endYear =
+                            endDate !== null
+                                ? new Date(endDate).getFullYear() === startYear
+                                    ? null
+                                    : new Date(endDate).getFullYear()
+                                : present;
+                        const years = endYear
+                            ? `${startYear} - ${endYear}`
+                            : startYear;
+                        return (
+                            <li>
+                                <article class="cv-item">
+                                    <header>
+                                        <div>
+                                            <a
+                                                href={url}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                <h3>{name}</h3>
+                                            </a>
+                                            <h4>{position}</h4>
+                                        </div>
+                                        <time>{years}</time>
+                                    </header>
+                                    <details>
+                                        <summary>{summaryTitle}</summary>
+                                        <ul class="summary-list">
+                                            {summary.map((item) => (
+                                                <li>{item}</li>
+                                            ))}
+                                        </ul>
+                                    </details>
+                                </article>
+                            </li>
+                        );
+                    },
+                )
+        }
+    </ul>
+</Section>
+
+<style>
+
+    h3 {
+        margin-bottom: 4px;
+    }
+
+    .summary-list {
+        font-size: var(--text-small);
+        list-style: circle;
+        list-style-type: square;
+        list-style-position: inside;
+        line-height: 1.5;
+        margin: 8px 0;
+        padding: 8px;
+        background-color: var(--color-neutral-1);
+        border-radius: 6px;
+        color: var(--experience-text-color);
+    }
+
+    summary {
+        cursor: pointer;
+        font-size: var(--text-normal);
+        list-style-type: '➕ ';
+    }
+
+    details[open] > summary {
+        list-style-type: '➖ ';
+    }   
+
+    summary::marker {
+        color: var(--color-neutral-4);
+        font-size: 0.8rem;
+    }
+</style>

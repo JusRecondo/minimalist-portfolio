@@ -1,0 +1,30 @@
+---
+interface Props {
+    title?: string;
+    customClass?: string;
+}
+
+const { title, customClass } = Astro.props;
+---
+
+<section class={customClass ? customClass : null}>
+    {title && <h2>{title}</h2>}
+    <slot />
+</section>
+
+<style>
+    section {
+        margin: 0 0 40px 0;
+    }
+
+    h2 {
+        margin-bottom: 8px;
+        line-height: 1.5;
+    }
+
+    @media print {
+        section {
+            margin: 0 0 32px 0;
+        }
+    }
+</style>

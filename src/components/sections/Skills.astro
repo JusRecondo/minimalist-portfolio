@@ -1,0 +1,44 @@
+---
+import Section from "@/components/Section.astro";
+import { isLangSpanish } from "@/lib/utils";
+import { skills } from "@cv";
+import { Icon } from "astro-icon/components";
+
+//Translations
+const { url } = Astro.request;
+const title = isLangSpanish(url) ? "Tecnologías" : "Technologies";
+---
+
+<Section title={title}>
+    <ul>
+        {
+            skills &&
+                skills.map(({ name, iconName }) => (
+                    <li>
+                        <Icon name={iconName} />
+                        {name}
+                    </li>
+                ))
+        }
+    </ul>
+</Section>
+
+<style>
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        border-radius: 6px;
+        padding: 0.2rem 0.6rem;
+        background: var(--color-neutral-1);
+        color: var(--color-dark);
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+</style>

@@ -1,0 +1,65 @@
+---
+import Section from "@/components/Section.astro";
+import { isLangSpanish } from "@/lib/utils";
+import { projects } from "@cv";
+import { projects as projectsES } from "@cv-es";
+
+//Translations
+const { url } = Astro.request;
+const isSpanish = isLangSpanish(url);
+
+const title = isSpanish ? "Proyectos" : "Projects";
+const data = isSpanish ? projectsES : projects;
+---
+
+<Section title={title} customClass="no-print">
+    <ul>
+        {
+            data &&
+                data.map(({ name, url, description }) => (
+                    <li>
+                        <article>
+                            <a
+                                href={url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <h3>{name}</h3>
+                            </a>
+                            <p>{description}</p>
+                            <p class="print-url">{url}</p>
+                        </article>
+                    </li>
+                ))
+        }
+    </ul>
+</Section>
+
+<style>
+    ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px;
+        height: 100%;
+        border-radius: 6px;
+        border: 1px solid var(--color-neutral-1);
+    }
+
+    .print-url {
+        word-break: break-all;
+        font-size: var(--text-small);
+    }
+
+    @media screen {
+        .print-url {
+            display: none;
+        }
+    }
+</style>

@@ -1,0 +1,29 @@
+---
+import Section from "@/components/Section.astro";
+import { isLangSpanish } from "@/lib/utils";
+import { languages } from "@cv";
+import { languages as languagesES } from "@cv-es";
+
+//Translations
+const { url } = Astro.request;
+const isSpanish = isLangSpanish(url);
+
+const title = isSpanish ? "Lenguajes" : "Languages";
+const data = isSpanish ? languagesES : languages;
+---
+
+<Section title={title}>
+    <ul class="cv-list">
+        {
+            data &&
+                data.map(({ language, fluency }) => (
+                    <li>
+                        <article class="cv-item">
+                            <h3>{language}</h3>
+                            <p>{fluency}</p>
+                        </article>
+                    </li>
+                ))
+        }
+    </ul>
+</Section>

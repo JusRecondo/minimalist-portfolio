@@ -1,0 +1,47 @@
+---
+import Section from "@/components/Section.astro";
+import { isLangSpanish } from "@/lib/utils";
+import { certificates } from "@cv";
+import { certificates as certificatesES } from "@cv-es";
+
+//Translations
+const { url } = Astro.request;
+const isSpanish = isLangSpanish(url);
+
+const title = isSpanish ? "Educación" : "Education";
+const data = isSpanish ? certificatesES : certificates;
+---
+
+<Section title={title}>
+    <ul class="cv-list">
+        {
+            data &&
+                data.map(({ name, url, date, issuer }) => {
+                    const year = new Date(date).getFullYear();
+                    return (
+                        <li>
+                            <article class="cv-item">
+                                <header>
+                                    <h3>{name}</h3>
+                                    <time>{year}</time>
+                                </header>
+                                <a
+                                    href={url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <p>{issuer}</p>
+                                </a>
+                            </article>
+                        </li>
+                    );
+                })
+        }
+    </ul>
+</Section>
+
+<style>
+    header {
+        align-items: center;
+    }
+</style>
