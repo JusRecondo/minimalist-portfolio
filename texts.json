@@ -24,5 +24,41 @@
         "emailIconA11yText": "Enviar un correo electrónico a",
         "phoneIconA11yText": "Llamar a",
         "profileIconA11yText": "Ir al perfil de"
+    },
+    "about": {
+        "title": "About"
+    },
+    "aboutES": {
+        "title": "Sobre mí"
+    },
+    "Experience": {
+        "title": ""
+    },
+    "ExperienceES": {
+        "title": ""
+    },
+    "Education": {
+        "title": ""
+    },
+    "EducationES": {
+        "title": ""
+    },
+    "Projects": {
+        "title": ""
+    },
+    "ProjectsES": {
+        "title": ""
+    },
+    "Skills": {
+        "title": ""
+    },
+    "SkillES": {
+        "title": ""
+    },
+    "Languages": {
+        "title": ""
+    },
+    "LanguagesES": {
+        "title": ""
     }
 }

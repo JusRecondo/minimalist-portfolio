@@ -1,15 +1,16 @@
 ---
-import Section from "@/components/Section.astro";
-import { isLangSpanish } from "@/lib/utils";
-import { basics } from "@cv";
-import { basics as basicsES } from "@cv-es";
+import Section from '@/components/Section.astro'
+import { isLangSpanish } from '@/lib/utils'
+import { basics } from '@cv'
+import { basics as basicsES } from '@cv-es'
+import { about, aboutES } from '@texts'
 
 //Translations
-const { url } = Astro.request;
-const isSpanish = isLangSpanish(url);
+const { url } = Astro.request
+const isSpanish = isLangSpanish(url)
 
-const title = isSpanish ? "Sobre mí" : "About";
-const { summary } = isSpanish ? basicsES : basics;
+const { summary } = isSpanish ? basicsES : basics
+const { title } = isSpanish ? aboutES : about
 ---
 
 <Section title={title}>
