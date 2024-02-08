@@ -1,32 +1,29 @@
 ---
-import Section from "@/components/Section.astro";
-import { Icon } from "astro-icon/components";
-import { isLangSpanish } from "@/lib/utils";
-import { basics } from "@cv";
-import { basics as basicsES } from "@cv-es";
+import Section from '@/components/Section.astro'
+import { Icon } from 'astro-icon/components'
+import { isLangSpanish } from '@/lib/utils'
+import { basics } from '@cv'
+import { basics as basicsES } from '@cv-es'
+import { hero, heroES } from '@texts'
 
-const { name, image, email, phone, location, profiles } = basics;
+const { name, image, email, phone, location, profiles } = basics
 
-const { city, country } = location;
+const { city, country } = location
 
-const linkedInInfo = profiles.find(({ network }) => network === "linkedin");
-const linkedInUrl = linkedInInfo?.url;
+const linkedInInfo = profiles.find(({ network }) => network === 'linkedin')
+const linkedInUrl = linkedInInfo?.url
 
 //Translations
-const { url } = Astro.request;
-const isSpanish = isLangSpanish(url);
+const { url } = Astro.request
+const isSpanish = isLangSpanish(url)
 
-const { label } = isSpanish ? basicsES : basics;
+const { label } = isSpanish ? basicsES : basics
 
-const emailIconA11yText = isSpanish
-    ? `Enviar un correo electrónico a ${name} a la dirección ${email}`
-    : `Send an e-mail to ${name} at ${email}`;
-const prhoneIconA11yText = isSpanish
-    ? `Llamar a ${name} al número ${email}`
-    : `Call ${name} at ${phone}`;
-const profileIconA11yText = isSpanish
-    ? `Ir al perfil de ${name} en`
-    : `Go to ${name}'s profile at`;
+const { 
+    emailIconA11yText, 
+    phoneIconA11yText, 
+    profileIconA11yText 
+} = isSpanish ? heroES : hero
 ---
 
 <Section>
@@ -36,7 +33,10 @@ const profileIconA11yText = isSpanish
                 <h1>{name}</h1>
                 <h2>{label}</h2>
                 <span class="location">
-                    <Icon name="world" title="Location" />
+                    <Icon
+                        name="world"
+                        title="Location"
+                    />
                     {city}, {country}
                 </span>
             </div>
@@ -49,7 +49,10 @@ const profileIconA11yText = isSpanish
                             rel="noopener noreferrer"
                             class="social-button"
                         >
-                            <Icon name="email" title={emailIconA11yText} />
+                            <Icon
+                                name="email"
+                                title={`${emailIconA11yText} ${name}`}
+                            />
                         </a>
                     )
                 }
@@ -61,7 +64,10 @@ const profileIconA11yText = isSpanish
                             rel="noopener noreferrer"
                             class="social-button"
                         >
-                            <Icon name="phone" title={prhoneIconA11yText} />
+                            <Icon
+                                name="phone"
+                                title={`${phoneIconA11yText} ${name}`}
+                            />
                         </a>
                     )
                 }
@@ -87,7 +93,10 @@ const profileIconA11yText = isSpanish
             </div>
         </div>
         <figure>
-            <img src={image} alt={name} />
+            <img
+                src={image}
+                alt={name}
+            />
         </figure>
     </div>
 </Section>

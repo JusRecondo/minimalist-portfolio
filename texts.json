@@ -14,5 +14,15 @@
         "darkThemeA11yText": "Activar tema oscuro",
         "translateA11yText": "Cambiar lenguaje",
         "printA11yText": "Imprimir curriculum"
+    },
+    "hero": {
+        "emailIconA11yText": "Send an e-mail to",
+        "phoneIconA11yText": "Call",
+        "profileIconA11yText": "Go to"
+    },
+    "heroES": {
+        "emailIconA11yText": "Enviar un correo electrónico a",
+        "phoneIconA11yText": "Llamar a",
+        "profileIconA11yText": "Ir al perfil de"
     }
 }
