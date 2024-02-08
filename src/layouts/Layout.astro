@@ -1,0 +1,220 @@
+---
+import { isLangSpanish } from "@/lib/utils";
+
+interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
+
+//Translations
+const { url } = Astro.request;
+const isSpanish = isLangSpanish(url);
+
+const langCode = isSpanish ? "es" : "en";
+
+const description = isSpanish
+    ? "Hola! Soy Jus Recondo, Front End Developer y docente."
+    : "Hi! I'm Jus Recondo, Front End Developer and teacher.";
+---
+
+<!doctype html>
+<html lang={langCode} data-theme="light">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content={description} />
+
+        <meta name="twitter:title" content="Jus Recondo" />
+        <meta
+            name="twitter:description"
+            content={description}
+        />
+        
+
+        <meta property="og:title" content="Jus Recondo" />
+        <meta
+            property="og:description"
+            content={description}
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://jusrecondo.web.app/" />
+        
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+    </head>
+    <body>
+        <slot />
+    </body>
+</html>
+<style is:global>
+    /* Global color variables */
+    :root {
+        --color-dark: #0e0e0e;
+        --color-light: #fafafa;
+        --color-neutral-1: #eee;
+        --color-neutral-2: #cdcdcd;
+        --color-neutral-3: #777;
+        --color-neutral-4: #535353;
+        --text-small: 0.8rem;
+        --text-normal: 0.9rem;
+        --text-medium: 1.2rem;
+        --text-large: 1.5rem;
+        --text-xlarge: 2.2rem;
+    }
+
+    @media (max-width: 500px) {
+        :root {
+            font-size: 14px;
+        }
+    }
+
+    @media print {
+        :root {
+            font-size: 14px;
+        }
+
+        .no-print {
+            display: none;
+        }
+    }
+
+    /* Theme color variables */
+    [data-theme="light"] {
+        --bg-color: var(--color-light);
+        --body-text-color: var(--color-neutral-4);
+        --small-text-color: var(--color-neutral-4);
+        --title-text-color: var(--color-dark);
+        --button-icon-color: var(--color-neutral-3);
+        --button-border: var(--color-neutral-1);
+        --button-hover: var(--color-neutral-1);
+        --experience-text-color: var(--color-neutral-4);
+    }
+
+    [data-theme="dark"] {
+        --bg-color: var(--color-dark);
+        --body-text-color: var(--color-neutral-1);
+        --small-text-color: var(--color-neutral-2);
+        --title-text-color: var(--color-light);
+        --button-icon-color: var(--color-light);
+        --button-border: var(--color-neutral-1);
+        --button-hover: var(--color-neutral-4);
+        --experience-text-color: var(--color-neutral-4);
+    }
+
+    /* Hide corresponding icon */
+    [data-theme="light"] [data-icon="light"] {
+        display: none;
+    }
+
+    [data-theme="dark"] [data-icon="dark"] {
+        display: none;
+    }
+
+    html {
+        font-family: Menlo, Monaco, "Lucida Console", "Courier New", Courier,
+            monospace;
+        letter-spacing: -0.025rem;
+        background: var(--bg-color);
+        color: var(--body-text-color);
+    }
+
+    body,
+    figure {
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    h2 {
+        font-size: var(--text-large);
+    }
+
+    h3 {
+        font-size: var(--text-medium);
+        font-weight: 500;
+    }
+
+    h4 {
+        font-weight: 400;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        color: var(--title-text-color);
+        margin: 0;
+        font-family:
+            system-ui,
+            -apple-system,
+            BlinkMacSystemFont,
+            "Segoe UI",
+            Roboto,
+            Oxygen,
+            Ubuntu,
+            Cantarell,
+            "Open Sans",
+            "Helvetica Neue",
+            sans-serif;
+    }
+
+    h3 {
+        line-height: 1.2;
+    }
+
+    p {
+        margin: 0;
+        color: inherit;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        text-wrap: pretty;
+    }
+
+    [data-icon] {
+        font-size: 1.2rem;
+        color: inherit;
+    }
+
+    .cv-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cv-item header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 4px;
+    }
+
+    .cv-item time {
+        font-size: var(--text-normal);
+        min-width: fit-content;
+    }
+</style>
