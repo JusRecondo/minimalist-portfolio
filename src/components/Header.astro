@@ -95,7 +95,7 @@ const printBtnLabel = isSpanish ? "imprimir" : "print";
     langBtn?.addEventListener("click", () => {
         const path = window.location.pathname;
 
-        if (path === "/es") {
+        if (path.includes("/es")) {
             window.location.pathname = "/";
         } else {
             window.location.pathname = "/es";
