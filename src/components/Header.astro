@@ -9,11 +9,11 @@ const isSpanish = isLangSpanish(url)
 
 const {
     langBtnLabel,
-    printBtnLabel,
+    downloadBtnLabel,
     lightThemeA11yText,
     darkThemeA11yText,
     translateA11yText,
-    printA11yText,
+    downloadA11yText,
 } = isSpanish ? headerES : header
 ---
 
@@ -36,12 +36,12 @@ const {
         />
         <span>{langBtnLabel}</span>
     </button>
-    <button id="print-btn">
+    <button id="download-btn">
         <Icon
-            name="print"
-            title={printA11yText}
+            name="download"
+            title={downloadA11yText}
         />
-        <span>{printBtnLabel}</span>
+        <span>{downloadBtnLabel}</span>
     </button>
 </header>
 
@@ -107,13 +107,13 @@ const {
         }
     })
 
-    //Print feature
+    /* //Print feature
     const printBtn = document.querySelector('#print-btn')
 
     printBtn?.addEventListener('click', () => {
         window.print()
     })
-
+ */
     //Translation feature
     const langBtn = document.querySelector('#lang-btn')
 

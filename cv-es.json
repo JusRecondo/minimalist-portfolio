@@ -179,11 +179,6 @@
     ],
     "projects": [
         {
-            "name": "Alt Cooperativa: landing page",
-            "description": "Headless CMS (WordPress) y Front End construido con with React, Sass, Apollo, GraphQL",
-            "url": "https://altcooperativa.com/"
-        },
-        {
             "name": "Lucia Bonato: portfolio web de artista",
             "description": "Custom WordPress theme with CSS and JavaScript",
             "url": "https://enriquetagz.com/"
@@ -194,19 +189,9 @@
             "url": "https://ipjripjr.web.app/"
         },
         {
-            "name": "Ire Paz: sitio web de artista",
-            "description": "Sitio web estático diseñado y realizado con with HTML, CSS, Firebase hosting",
-            "url": "https://ire-paz.web.app/"
-        },
-        {
             "name": "String Synth",
             "description": "Instrumento musical experimental construido con JavaScript, Web Audio API, HTML, CSS, Hydra Synth",
             "url": "https://jusrecondo.github.io/string-synth/"
-        },
-        {
-            "name": "W-Synth",
-            "description": "Instrumento musical experimental construido JavaScript, Web Audio API, HTML, CSS",
-            "url": "https://jusrecondo.github.io/w-synth-mobile/"
         }
     ]
 }

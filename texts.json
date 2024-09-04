@@ -11,19 +11,19 @@
     },
     "header": {
         "langBtnLabel": "es",
-        "printBtnLabel": "print",
+        "downloadBtnLabel": "download resume",
         "lightThemeA11yText": "Activate light theme",
         "darkThemeA11yText": "Activate dark theme",
         "translateA11yText": "Change language",
-        "printA11yText": "Print resume"
+        "downloadA11yText": "Download resume"
     },
     "headerES": {
         "langBtnLabel": "en",
-        "printBtnLabel": "imprimir",
+        "downloadBtnLabel": "descargar cv",
         "lightThemeA11yText": "Activar tema claro",
         "darkThemeA11yText": "Activar tema oscuro",
         "translateA11yText": "Cambiar lenguaje",
-        "printA11yText": "Imprimir curriculum"
+        "downloadA11yText": "Descargar curriculum"
     },
     "hero": {
         "emailIconA11yText": "Send an e-mail to",
