@@ -22,7 +22,7 @@ const { title } = isSpanish ? projectsTextsES : projectsTexts
             data &&
                 data.map(({ name, url, description }) => (
                     <li>
-                        <article>
+                        <article class="proyect-card">
                             <a
                                 href={url}
                                 target="_blank"
@@ -46,7 +46,7 @@ const { title } = isSpanish ? projectsTextsES : projectsTexts
         gap: 1rem;
     }
 
-    article {
+    .proyect-card {
         display: flex;
         flex-direction: column;
         gap: 16px;
@@ -54,6 +54,11 @@ const { title } = isSpanish ? projectsTextsES : projectsTexts
         height: 100%;
         border-radius: 6px;
         border: 1px solid var(--color-neutral-1);
+    }
+
+    .proyect-card:hover {
+        background-color: var(--button-hover);
+        transition: all 0.3s ease;
     }
 
     .print-url {
