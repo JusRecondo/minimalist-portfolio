@@ -5,6 +5,7 @@
         "image": "/jus-recondo.webp",
         "email": "justina.recondo@gmail.com",
         "phone": "+54911 50062896",
+        "resume": "/Jus-Recondo-Resume.pdf",
         "summary": "I enjoy translating designs into code and participate in the design process working closely with the UX/UI team. I have solid skills in HTML, CSS, JavaScript and React, so I can quickly learn new technologies and tools. In addition to that, my teaching experience has helped me boost my communication and teamwork skills.",
         "location": {
             "city": "Buenos Aires",
@@ -64,7 +65,7 @@
         },
         {
             "name": "Woopi Apps",
-            "position": "Front End Developer",
+            "position": "Front End Developer (part-time)",
             "url": "https://woopi.com.ar/",
             "startDate": "2022-03-01",
             "endDate": "2022-10-01",
@@ -86,7 +87,7 @@
             ]
         }
     ],
-    "certificates": [
+    "courses": [
         {
             "name": "Ionic & Capacitor for Building Native Mobile Apps",
             "date": "2024-04-01",

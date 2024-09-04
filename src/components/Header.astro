@@ -2,10 +2,13 @@
 import { Icon } from 'astro-icon/components'
 import { isLangSpanish } from '@/lib/utils'
 import { header, headerES } from '@texts'
+import { basics } from '@cv'
 
 //Translations
 const { url } = Astro.request
 const isSpanish = isLangSpanish(url)
+
+const { resume } = basics
 
 const {
     langBtnLabel,
@@ -41,7 +44,9 @@ const {
             name="download"
             title={downloadA11yText}
         />
-        <span>{downloadBtnLabel}</span>
+        <a href={resume} target="_blank" rel="noopener noreferrer">
+            {downloadBtnLabel}
+        </a>
     </button>
 </header>
 
