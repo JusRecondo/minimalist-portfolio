@@ -1,9 +1,9 @@
-# Minimalist Resume/Portfolio
+# Jus Recondo Minimalist Resume/Portfolio
 
-Esquema del JSON de CV de [jsonresume.org](https://jsonresume.org/schema/)
+JSON CV scheme from [jsonresume.org](https://jsonresume.org/schema/)
 
-Basado en el diseño de [Bartosz Jarocki](https://github.com/BartoszJarocki/cv) y
-en el proyecto de [midudev](https://github.com/midudev/minimalist-portfolio-json)
+Based on the design by [Bartosz Jarocki](https://github.com/BartoszJarocki/cv) and
+on the project by [midudev](https://github.com/midudev/minimalist-portfolio-json)
 
 ## Stack
 
@@ -13,6 +13,6 @@ en el proyecto de [midudev](https://github.com/midudev/minimalist-portfolio-json
 * CSS
 * JSON
 
-### Funcionalidades agregadas: 
-* Cambio de tema light/dark
-* Traducción ingles/español
+### Features added: 
+* Light/dark theme switching
+* English/Spanish translation
