@@ -10,7 +10,10 @@ const { url } = Astro.request
 const { title } = isLangSpanish(url) ? skillsTextsES : skillsTexts
 ---
 
-<Section title={title}>
+<Section 
+    title={title}
+    customClass="skills"
+>
     <ul>
         {
             skills &&

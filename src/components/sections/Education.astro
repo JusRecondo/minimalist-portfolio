@@ -1,19 +1,22 @@
 ---
 import Section from '@/components/Section.astro'
 import { isLangSpanish } from '@/lib/utils'
-import { certificates } from '@cv'
-import { certificates as certificatesES } from '@cv-es'
+import { courses } from '@cv'
+import { courses as coursesES } from '@cv-es'
 import { education, educationES } from '@texts'
 
 //Translations
 const { url } = Astro.request
 const isSpanish = isLangSpanish(url)
 
-const data = isSpanish ? certificatesES : certificates
+const data = isSpanish ? coursesES : courses
 const { title } = isSpanish ? educationES : education
 ---
 
-<Section title={title}>
+<Section 
+    title={title}
+    customClass="courses"
+>
     <ul class="cv-list">
         {
             data &&

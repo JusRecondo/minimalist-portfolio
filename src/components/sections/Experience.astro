@@ -14,7 +14,10 @@ const data = isSpanish ? workES : work
 const { title, present, summaryTitle } = isSpanish ? experienceES : experience
 ---
 
-<Section title={title}>
+<Section 
+    title={title}
+    customClass="experience"
+>
     <ul class="cv-list">
         {
             data &&

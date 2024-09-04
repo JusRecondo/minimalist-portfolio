@@ -13,7 +13,10 @@ const { summary } = isSpanish ? basicsES : basics
 const { title } = isSpanish ? aboutES : about
 ---
 
-<Section title={title}>
+<Section 
+    title={title}
+    customClass="about"
+>
     <p>
         {summary}
     </p>

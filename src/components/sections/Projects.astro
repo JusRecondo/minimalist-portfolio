@@ -15,7 +15,7 @@ const { title } = isSpanish ? projectsTextsES : projectsTexts
 
 <Section
     title={title}
-    customClass="no-print"
+    customClass="projects"
 >
     <ul>
         {
@@ -31,7 +31,6 @@ const { title } = isSpanish ? projectsTextsES : projectsTexts
                                 <h3>{name}</h3>
                             </a>
                             <p>{description}</p>
-                            <p class="print-url">{url}</p>
                         </article>
                     </li>
                 ))
@@ -59,16 +58,5 @@ const { title } = isSpanish ? projectsTextsES : projectsTexts
     .proyect-card:hover {
         background-color: var(--button-hover);
         transition: all 0.3s ease;
-    }
-
-    .print-url {
-        word-break: break-all;
-        font-size: var(--text-small);
-    }
-
-    @media screen {
-        .print-url {
-            display: none;
-        }
     }
 </style>

@@ -13,7 +13,10 @@ const data = isSpanish ? languagesES : languages
 const { title } = isSpanish ? languagesTextsES : languagesTexts
 ---
 
-<Section title={title}>
+<Section 
+    title={title}
+    customClass="languages"
+>
     <ul class="cv-list languages">
         {
             data &&
