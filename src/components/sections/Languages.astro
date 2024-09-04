@@ -14,7 +14,7 @@ const { title } = isSpanish ? languagesTextsES : languagesTexts
 ---
 
 <Section title={title}>
-    <ul class="cv-list">
+    <ul class="cv-list languages">
         {
             data &&
                 data.map(({ language, fluency }) => (
@@ -28,3 +28,14 @@ const { title } = isSpanish ? languagesTextsES : languagesTexts
         }
     </ul>
 </Section>
+
+<style>
+    .cv-list.languages {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .cv-list.languages h3 {
+        font-size: 1.1rem;
+    }
+</style>
