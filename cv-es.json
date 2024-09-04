@@ -35,7 +35,8 @@
                 "Refactorización de código legacy, limpieza de código y librerías en desuso, migración de Class Components a Functional Components",
                 "Participo en el proceso de rediseñar e implementar componentes junto al area de diseño UX/UI",
                 "Realizo testing manual de accesibilidad web e implemento mejoras para cumplir con las pautas WCAG",
-                "Escribo documentación sobre lo implementado en el Front End y ayudo a optimizar procesos en este área"
+                "Escribo documentación sobre lo implementado en el Front End y ayudo a optimizar procesos en este área",
+                "Desarrollo mobile cross-platform con Ionic + React + Capacitor"
             ]
         },
         {
@@ -77,6 +78,24 @@
         }
     ],
     "certificates": [
+        {
+            "name": "Ionic & Capacitor for Building Native Mobile Apps",
+            "date": "2024-04-01",
+            "issuer": "FreeCodeCamp",
+            "url": "https://www.youtube.com/watch?v=K7ghUiXLef8"
+        },
+        {
+            "name": "Taller de UX/UI",
+            "date": "2023-10-07",
+            "issuer": "Estudiando UX",
+            "url": "https://www.estudiandoux.com/"
+        },
+        {
+            "name": "Curso de React",
+            "date": "2022-03-01",
+            "issuer": "MiduDev",
+            "url": "https://cursoreact.dev/"
+        },
         {
             "name": "Desarrollo Web Fullstack (MERN)",
             "date": "2021-11-01",

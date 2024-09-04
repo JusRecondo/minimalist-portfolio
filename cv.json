@@ -32,10 +32,11 @@
             "endDate": null,
             "summary": [
                 "Maintenance and implementation of new features in a web application built with React",
-                "Refactor legacy code and migrate Class components to Functional components",
+                "Refactor legacy code and migrate Class Components to Functional Components",
                 "Collaborate in the redesign and implementation of components alongside the UX/UI design team",
                 "Perform manual testing for web accessibility and implement fixes to comply with WCAG guidelines",
-                "Write Front End documentation and optimize processes"
+                "Write Front End documentation and optimize processes",
+                "Cross-platform mobile development with Ionic + React + Capacitor"
             ]
         },
         {
@@ -77,6 +78,24 @@
         }
     ],
     "certificates": [
+        {
+            "name": "Ionic & Capacitor for Building Native Mobile Apps",
+            "date": "2024-04-01",
+            "issuer": "FreeCodeCamp",
+            "url": "https://www.youtube.com/watch?v=K7ghUiXLef8"
+        },
+        {
+            "name": "UX/UI Workshop",
+            "date": "2023-10-07",
+            "issuer": "Estudiando UX",
+            "url": "https://www.estudiandoux.com/"
+        },
+        {
+            "name": "React Course",
+            "date": "2022-03-01",
+            "issuer": "MiduDev",
+            "url": "https://cursoreact.dev/"
+        },
         {
             "name": "Fullstack Web Development (MERN)",
             "date": "2021-11-01",
