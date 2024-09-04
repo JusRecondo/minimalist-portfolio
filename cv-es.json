@@ -2,7 +2,7 @@
     "basics": {
         "name": "Jus Recondo",
         "label": "Desarrolladore Front End con más de tres años de experiencia utilizando JavaScript, HTML, CSS y React.",
-        "image": "/image.webp",
+        "image": "/jus-recondo.webp",
         "email": "justina.recondo@gmail.com",
         "phone": "+54911 50062896",
         "summary": "Me apasiona traducir diseños a código y participar en el proceso de diseñar interfaces trabajando codo a codo con el equipo UX/UI. Tengo sólidos conocimientos en HTML, CSS y Javascript lo cual me permite adaptarme y aprender rápidamente nuevas tecnologías y herramientas. Además, mi experiencia como docente me ha permitido fortalecer habilidades de comunicación y trabajo en equipo.",
@@ -31,11 +31,11 @@
             "startDate": "2023-04-01",
             "endDate": null,
             "summary": [
-                "Trabajo en el mantenimiento e implementación de nuevas funcionalidades en una aplicación web construida con React",
-                "Hago refactorización de código legacy, limpieza de código y librerías en desuso, migración de Class components a Functional components",
+                "Mantenimiento e implementación de nuevas funcionalidades en una aplicación web construida con React",
+                "Refactorización de código legacy, limpieza de código y librerías en desuso, migración de Class Components a Functional Components",
                 "Participo en el proceso de rediseñar e implementar componentes junto al area de diseño UX/UI",
                 "Realizo testing manual de accesibilidad web e implemento mejoras para cumplir con las pautas WCAG",
-                "Implemento fixes y nuevas funcionalidades en el Front End a partir de la detección de bugs y a pedido del cliente"
+                "Escribo documentación sobre lo implementado en el Front End y ayudo a optimizar procesos en este área"
             ]
         },
         {

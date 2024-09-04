@@ -2,7 +2,7 @@
     "basics": {
         "name": "Jus Recondo",
         "label": "Front End Developer with +3 years of experience building interfaces with JavaScript, HTML, CSS and React.",
-        "image": "/image.webp",
+        "image": "/jus-recondo.webp",
         "email": "justina.recondo@gmail.com",
         "phone": "+54911 50062896",
         "summary": "I enjoy translating designs into code and participate in the design process working closely with the UX/UI team. I have solid skills in HTML, CSS, JavaScript and React, so I can quickly learn new technologies and tools. In addition to that, my teaching experience has helped me boost my communication and teamwork skills.",
@@ -31,11 +31,11 @@
             "startDate": "2023-04-01",
             "endDate": null,
             "summary": [
-                "Work on maintenance and implementation of new features in a web application built with React",
-                "Refactor legacy code, clean up code, and migrate Class components to Functional components",
+                "Maintenance and implementation of new features in a web application built with React",
+                "Refactor legacy code and migrate Class components to Functional components",
                 "Collaborate in the redesign and implementation of components alongside the UX/UI design team",
-                "Perform manual testing for web accessibility and implement improvements to comply with WCAG guidelines",
-                "Implement fixes and new features in the Front End based on bug detection and client requests"
+                "Perform manual testing for web accessibility and implement fixes to comply with WCAG guidelines",
+                "Write Front End documentation and optimize processes"
             ]
         },
         {
