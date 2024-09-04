@@ -27,7 +27,7 @@ const {
             name="light"
             title={lightThemeA11yText}
         />
-        <span>dark</span>
+        <span>light</span>
     </button>
     <button id="lang-btn">
         <Icon
@@ -48,7 +48,7 @@ const {
 <style>
     header {
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         gap: 8px;
         width: 100%;
         padding: 1rem;
@@ -57,6 +57,12 @@ const {
         left: 0;
         background-color: var(--bg-color);
         height: 54px;
+    }
+
+    @media (min-width: 768px) {
+        header {
+            justify-content: flex-end;
+        }
     }
 
     @media print {
@@ -74,7 +80,7 @@ const {
         border: 1px solid var(--button-border);
         background: transparent;
         cursor: pointer;
-        padding: 4px 8px;
+        padding: 10px 12px;
     }
 
     button:hover {
