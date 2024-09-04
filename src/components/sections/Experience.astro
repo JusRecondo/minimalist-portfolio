@@ -35,13 +35,17 @@ const { title, present, summaryTitle } = isSpanish ? experienceES : experience
                                 <article class="cv-item">
                                     <header>
                                         <div>
-                                            <a
-                                                href={url}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                            >
+                                            {url ?
+                                                <a
+                                                    href={url}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    <h3>{name}</h3>
+                                                </a>
+                                            :
                                                 <h3>{name}</h3>
-                                            </a>
+                                            }
                                             <h4>{position}</h4>
                                         </div>
                                         <time>{years}</time>
