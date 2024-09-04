@@ -18,7 +18,7 @@ const { langCode, name, description } = isSpanish ? layoutES : layout
 <!doctype html>
 <html
     lang={langCode}
-    data-theme="light"
+    data-theme="dark"
 >
     <head>
         <meta charset="UTF-8" />
@@ -79,16 +79,19 @@ const { langCode, name, description } = isSpanish ? layoutES : layout
     <body>
         <slot />
         <style is:global>
+            @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
             /* Global color variables */
             :root {
+                font-family: 'SUSE', sans-serif;
+                font-size: 16px;
                 --color-dark: #0e0e0e;
-                --color-light: #fafafa;
-                --color-neutral-1: #eee;
-                --color-neutral-2: #cdcdcd;
+                --color-light: #f8f8f8;
+                --color-neutral-1: #e6e6e6;
+                --color-neutral-2: #c0c0c0;
                 --color-neutral-3: #777;
                 --color-neutral-4: #535353;
-                --text-small: 0.8rem;
-                --text-normal: 0.9rem;
+                --text-small: 0.9rem;
+                --text-normal: 1rem;
                 --text-medium: 1.2rem;
                 --text-large: 1.5rem;
                 --text-xlarge: 2.2rem;
@@ -127,9 +130,6 @@ const { langCode, name, description } = isSpanish ? layoutES : layout
             }
 
             html {
-                font-family: Menlo, Monaco, 'Lucida Console', 'Courier New',
-                    Courier, monospace;
-                letter-spacing: -0.025rem;
                 background-color: var(--bg-color);
                 color: var(--body-text-color);
             }
@@ -205,13 +205,12 @@ const { langCode, name, description } = isSpanish ? layoutES : layout
             p {
                 margin: 0;
                 color: inherit;
-                font-size: 0.9rem;
                 line-height: 1.5;
                 text-wrap: pretty;
             }
 
             [data-icon] {
-                font-size: 1.2rem;
+                font-size: 1rem;
                 color: inherit;
             }
 
@@ -234,17 +233,13 @@ const { langCode, name, description } = isSpanish ? layoutES : layout
 
             /* MEDIA QUERIES */
 
-            @media (max-width: 500px) {
+            @media (min-width: 768px) {
                 :root {
-                    font-size: 14px;
+                    font-size: 18px;
                 }
             }
 
             @media print {
-                :root {
-                    font-size: 14px;
-                }
-
                 .no-print {
                     display: none;
                 }
