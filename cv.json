@@ -32,35 +32,11 @@
             "endDate": null,
             "summary": [
                 "Maintenance and implementation of new features in a web application built with React",
-                "Refactor legacy code and migrate Class Components to Functional Components",
-                "Collaborate in the redesign and implementation of components alongside the UX/UI design team",
+                "Refactoring of legacy code",
+                "Participation in the process of redesigning and implementing components together with the UX/UI design area",
                 "Perform manual testing for web accessibility and implement fixes to comply with WCAG guidelines",
-                "Write Front End documentation and optimize processes",
+                "Document and optimize processes in the front end area",
                 "Cross-platform mobile development with Ionic + React + Capacitor"
-            ]
-        },
-        {
-            "name": "Eidos Global",
-            "position": "Teacher in Front End Development courses (part-time)",
-            "url": "https://www.eidosglobal.org/",
-            "startDate": "2022-03-01",
-            "endDate": "2023-03-01",
-            "summary": [
-                "Developed lesson plans, content, and exercises for HTML, CSS, and JavaScript classes",
-                "Conducted classes in online courses"
-            ]
-        },
-        {
-            "name": "Woopi Apps",
-            "position": "Front End Developer",
-            "url": "https://woopi.com.ar/",
-            "startDate": "2022-03-01",
-            "endDate": "2022-10-01",
-            "summary": [
-                "Worked on the maintenance and development of new features in various company projects built with React",
-                "Integrated functionalities on the Front End with endpoints from different services",
-                "Initiated projects from scratch using Next.js, React, and Typescript",
-                "Developed custom components following a UI Kit provided by the design team and implemented their visualization using Storybook"
             ]
         },
         {
@@ -70,10 +46,43 @@
             "startDate": "2020-11-01",
             "endDate": "2023-03-01",
             "summary": [
-                "Developed responsive websites from scratch using HTML, CSS, JavaScript, React, and WordPress (custom themes development)",
-                "Engaged in website maintenance tasks",
-                "Participated in client meetings, aiding in the identification and definition of functional requirements",
-                "Conducted Front End classes in web development courses and assisted team members with less experience"
+                "Development and maintenance of responsive websites using HTML, CSS, JavaScript, React and WordPress",
+                "Participation in client meetings helping to identify and define functional requirements",
+                "Teaching Front End classes in online courses and mentoring less experienced development team members"
+            ]
+        },
+        {
+            "name": "Eidos Global",
+            "position": "Teacher in Front End Development courses (part-time)",
+            "url": "https://www.eidosglobal.org/",
+            "startDate": "2022-03-01",
+            "endDate": "2023-03-01",
+            "summary": [
+                "Creation of lesson plans, content and exercises for HTML, CSS and JavaScript classes",
+                "Teaching classes in online courses"
+            ]
+        },
+        {
+            "name": "Woopi Apps",
+            "position": "Front End Developer",
+            "url": "https://woopi.com.ar/",
+            "startDate": "2022-03-01",
+            "endDate": "2022-10-01",
+            "summary": [
+                "Maintenance and development of new functionalities in several company projects built with React",
+                "Integration of functionalities in the Front End with APIs",
+                "Development of custom components with React and TypeScript and implementation of their visualization using Storybook"
+            ]
+        },
+        {
+            "name": "Front End Developer",
+            "position": "Freelance",
+            "url": null,
+            "startDate": "2020-06-01",
+            "endDate": "2020-10-01",
+            "summary": [
+                "Freelance website development for small businesses and artists.",
+                "HTML, CSS, JS, Bootstrap, Firebase Hosting"
             ]
         }
     ],

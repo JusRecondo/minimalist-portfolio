@@ -32,35 +32,10 @@
             "endDate": null,
             "summary": [
                 "Mantenimiento e implementación de nuevas funcionalidades en una aplicación web construida con React",
-                "Refactorización de código legacy, limpieza de código y librerías en desuso, migración de Class Components a Functional Components",
-                "Participo en el proceso de rediseñar e implementar componentes junto al area de diseño UX/UI",
-                "Realizo testing manual de accesibilidad web e implemento mejoras para cumplir con las pautas WCAG",
-                "Escribo documentación sobre lo implementado en el Front End y ayudo a optimizar procesos en este área",
+                "Participación en el proceso de rediseñar e implementar componentes junto al area de diseño UX/UI",
+                "Testing manual de accesibilidad web e implementación de mejoras para cumplir con las pautas WCAG",
+                "Documentación sobre lo implementado en el Front End y optimización procesos en este área",
                 "Desarrollo mobile cross-platform con Ionic + React + Capacitor"
-            ]
-        },
-        {
-            "name": "Eidos Global",
-            "position": "Docente en cursos de Desarrollo Front End (part-time)",
-            "url": "https://www.eidosglobal.org/",
-            "startDate": "2022-03-01",
-            "endDate": "2023-03-01",
-            "summary": [
-                "Desarrollé planificaciones, contenidos y ejercicios para clases de HTML, CSS y JavaScript",
-                "Dicté clases en cursos online"
-            ]
-        },
-        {
-            "name": "Woopi Apps",
-            "position": "Desarrollador Front End",
-            "url": "https://woopi.com.ar/",
-            "startDate": "2022-03-01",
-            "endDate": "2022-10-01",
-            "summary": [
-                "Trabajé en el mantenimiento y desarrollo de nuevas funcionalidades en varios proyectos de la empresa construidos con React",
-                "Integré funcionalidades en el Front End con endpoints de distintos servicios",
-                "Comencé proyectos desde cero con Next.js, React y TypeScript",
-                "Desarrollé componentes custom siguiendo un UI Kit provisto por el equipo de diseño e implementé la visualización de los mismos utilizando Storybook"
             ]
         },
         {
@@ -70,10 +45,43 @@
             "startDate": "2020-11-01",
             "endDate": "2023-03-01",
             "summary": [
-                "Desarrollé sitios web responsive desde cero utilizando HTML, CSS, JavaScript React y WordPress (desarrollo de temas personalizados)",
-                "Trabajé en el mantenimiento de sitios web",
-                "Participé en reuniones con clientes ayudando a identificar y definir requerimientos funcionales",
-                "Di clases de Front End en cursos de desarrollo web y ayudé a otros miembros de equipo de desarrollo con menor experiencia"
+                "Desarrollo y mantenimiento de sitios web responsive utilizando HTML, CSS, JavaScript React y WordPress",
+                "Participación en reuniones con clientes ayudando a identificar y definir requerimientos funcionales",
+                "Dictado de clases de Front End en cursos online y mentoreo a miembros de equipo de desarrollo con menos experiencia"
+            ]
+        },
+        {
+            "name": "Eidos Global",
+            "position": "Docente en cursos de Desarrollo Front End (part-time)",
+            "url": "https://www.eidosglobal.org/",
+            "startDate": "2022-03-01",
+            "endDate": "2023-03-01",
+            "summary": [
+                "Creación de planificaciones, contenidos y ejercicios para clases de HTML, CSS y JavaScript",
+                "Dictado de clases en cursos online"
+            ]
+        },
+        {
+            "name": "Woopi Apps",
+            "position": "Desarrollador Front End",
+            "url": "https://woopi.com.ar/",
+            "startDate": "2022-03-01",
+            "endDate": "2022-10-01",
+            "summary": [
+                "Mantenimiento y desarrollo de nuevas funcionalidades en varios proyectos de la empresa construidos con React",
+                "Integración de funionalidades en el Front End con APIs",
+                "Desarrollo de componentes custom con React y TypeScript e implementación de la visualización de los mismos utilizando Storybook"
+            ]
+        },
+        {
+            "name": "Desarrollador Front End",
+            "position": "Freelance",
+            "url": null,
+            "startDate": "2020-06-01",
+            "endDate": "2020-10-01",
+            "summary": [
+                "Desarrollo de sitios web de manera freelance para pequeños emprendimientos y artistas",
+                "HTML, CSS, JS, Bootstrap, Firebase Hosting"
             ]
         }
     ],
