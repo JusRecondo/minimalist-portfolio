@@ -3,12 +3,13 @@ import { Icon } from 'astro-icon/components'
 import { isLangSpanish } from '@/lib/utils'
 import { header, headerES } from '@texts'
 import { basics } from '@cv'
+import { basics as basicsES } from '@cv-es'
 
 //Translations
 const { url } = Astro.request
 const isSpanish = isLangSpanish(url)
 
-const { resume } = basics
+const { resume } = isSpanish ? basicsES : basics
 
 const {
     langBtnLabel,
