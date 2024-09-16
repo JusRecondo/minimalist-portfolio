@@ -58,10 +58,12 @@
         "title": "Cursos"
     },
     "projectsTexts": {
-        "title": "Projects"
+        "title": "Projects",
+        "more": "See the code for these projects and more on my Github"
     },
     "projectsTextsES": {
-        "title": "Proyectos"
+        "title": "Proyectos",
+        "more": "Ver el código de estos proyectos y más en mi Github"
     },
     "skillsTexts": {
         "title": "Technologies"

@@ -10,7 +10,7 @@ const { url } = Astro.request
 const isSpanish = isLangSpanish(url)
 
 const data = isSpanish ? projectsES : projects
-const { title } = isSpanish ? projectsTextsES : projectsTexts
+const { title, more } = isSpanish ? projectsTextsES : projectsTexts
 ---
 
 <Section
@@ -36,6 +36,14 @@ const { title } = isSpanish ? projectsTextsES : projectsTexts
                     </li>
                 ))
         }
+        <li>
+            <a
+                href="https://github.com/JusRecondo"
+                target="_blank"
+                rel="noopener noreferrer"
+                >{more} &rarr;</a
+            >
+        </li>
     </ul>
 </Section>
 
@@ -61,7 +69,7 @@ const { title } = isSpanish ? projectsTextsES : projectsTexts
         transition: all 0.3s ease;
     }
 
-    .project-link:hover, 
+    .project-link:hover,
     .project-link:focus,
     .project-link:active {
         text-decoration: none;
