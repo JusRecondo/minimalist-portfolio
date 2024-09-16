@@ -193,6 +193,11 @@
             "url": "https://enriquetagz.com/"
         },
         {
+            "name": "La Cara de los Últimos website",
+            "description": "Sitio web de artista. Construido con React.js.",
+            "url": "https://lacaradelosultimostest.web.app/"
+        },
+        {
             "name": "IPJR: sitio web de artista",
             "description": "Sitio web estático diseñado y realizado con HTML, CSS, Hydra Synth, Firebase hosting",
             "url": "https://ipjripjr.web.app/"
@@ -201,6 +206,11 @@
             "name": "String Synth",
             "description": "Instrumento musical experimental construido con JavaScript, Web Audio API, HTML, CSS, Hydra Synth",
             "url": "https://jusrecondo.github.io/string-synth/"
+        },
+        {
+            "name": "React e-commerce",
+            "description": "Simple e-commerce con autenticación de usuario, listado de productos y carrito. Construido con React.js, JavaScript, Redux Toolkit, Sass, custom hooks. Ejercicio de React.",
+            "url": "https://jusrecondo.github.io/react-ecommerce-redux/"
         }
     ]
 }

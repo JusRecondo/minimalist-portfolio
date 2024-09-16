@@ -22,16 +22,17 @@ const { title } = isSpanish ? projectsTextsES : projectsTexts
             data &&
                 data.map(({ name, url, description }) => (
                     <li>
-                        <article class="proyect-card">
-                            <a
-                                href={url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
+                        <a
+                            href={url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-link"
+                        >
+                            <article class="proyect-card">
                                 <h3>{name}</h3>
-                            </a>
-                            <p>{description}</p>
-                        </article>
+                                <p>{description}</p>
+                            </article>
+                        </a>
                     </li>
                 ))
         }
@@ -58,5 +59,11 @@ const { title } = isSpanish ? projectsTextsES : projectsTexts
     .proyect-card:hover {
         background-color: var(--button-hover);
         transition: all 0.3s ease;
+    }
+
+    .project-link:hover, 
+    .project-link:focus,
+    .project-link:active {
+        text-decoration: none;
     }
 </style>
