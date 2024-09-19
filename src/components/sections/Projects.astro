@@ -20,7 +20,7 @@ const { title, more } = isSpanish ? projectsTextsES : projectsTexts
     <ul>
         {
             data &&
-                data.map(({ name, url, description }) => (
+                data.map(({ name, role, url, description }) => (
                     <li>
                         <a
                             href={url}
@@ -29,7 +29,11 @@ const { title, more } = isSpanish ? projectsTextsES : projectsTexts
                             class="project-link"
                         >
                             <article class="proyect-card">
-                                <h3>{name}</h3>
+                                <h3>{name} 
+                                    <span class="role">
+                                        ({role})
+                                    </span>
+                                </h3>
                                 <p>{description}</p>
                             </article>
                         </a>
@@ -73,5 +77,10 @@ const { title, more } = isSpanish ? projectsTextsES : projectsTexts
     .project-link:focus,
     .project-link:active {
         text-decoration: none;
+    }
+
+    span.role {
+        font-size: 16px;
+        font-style: italic;
     }
 </style>

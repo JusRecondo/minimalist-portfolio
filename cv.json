@@ -189,28 +189,39 @@
     ],
     "projects": [
         {
-            "name": "Lucia Bonato: artist portfolio website",
-            "description": "Custom WordPress theme with CSS and JavaScript",
+            "name": "Lucia Bonato",
+            "role": "development",
+            "description": "Artist portfolio website. Custom WordPress theme with Sass and JavaScript.",
             "url": "https://enriquetagz.com/"
         },
         {
-            "name": "La Cara de los Últimos website",
-            "description": "Artist website. Built with React.js.",
+            "name": "Ire Paz",
+            "role": "design and development",
+            "description": "Artist website. Built with HTML, Sass, JavaScript, Firebase Hosting.",
             "url": "https://lacaradelosultimostest.web.app/"
         },
         {
-            "name": "IPJR: artist landing page",
-            "description": "Simple static website built with HTML, CSS, Hydra Synth, Firebase hosting",
+            "name": "La Cara de los Últimos",
+            "role": "design and development",
+            "description": "Artist website. Built with React.js, Sass and Firebase Hosting.",
+            "url": "https://lacaradelosultimostest.web.app/"
+        },
+        {
+            "name": "IPJR",
+            "role": "design and development",
+            "description": "Artist landing page. Simple static website built with HTML, CSS, JavaScript, Hydra Synth, Firebase hosting.",
             "url": "https://ipjripjr.web.app/"
         },
         {
             "name": "String Synth",
-            "description": "Experimental musical instrument built with JavaScript, Web Audio API, HTML, CSS, Hydra Synth",
+            "role": "design and development",
+            "description": "Experimental musical instrument built with JavaScript, Web Audio API, Web MIDI API, HTML, CSS, Hydra Synth.",
             "url": "https://jusrecondo.github.io/string-synth/"
         },
         {
-            "name": "React e-commerce",
-            "description": "Simple e-commerce with user authentication, products and cart. Built with React.js, JavaScript, Redux Toolkit, Sass, custom hooks. React Exercise.",
+            "name": "React e-commerce exercise",
+            "role": "design and development",
+            "description": "Simple e-commerce with user authentication, products and cart. Built with React.js, JavaScript, Redux Toolkit, Sass, custom hooks.",
             "url": "https://jusrecondo.github.io/react-ecommerce-redux/"
         }
     ]
