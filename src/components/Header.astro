@@ -45,9 +45,7 @@ const {
             name="download"
             title={downloadA11yText}
         />
-        <a href={resume} target="_blank" rel="noopener noreferrer">
-            {downloadBtnLabel}
-        </a>
+        {downloadBtnLabel}
     </button>
 </header>
 
@@ -92,6 +90,7 @@ const {
     //Theme feature
     const themeBtn = document.querySelector('#theme-btn')
     const themeBtnLabel = document.querySelector('#theme-btn span')
+    const downloadBtn = document.querySelector('#download-btn')
     const html = document.querySelector('html')
 
     themeBtn?.addEventListener('click', () => {
@@ -118,5 +117,11 @@ const {
         } else {
             window.location.pathname = '/es'
         }
+    })
+
+    downloadBtn?.addEventListener('click', () => {
+        const lang = window.location.pathname
+        const resume = lang === 'en' ? '/Jus-Recondo-Resume.pdf' : '/Jus-Recondo-CV.pdf' 
+        window.open(resume, '_blank')
     })
 </script>
