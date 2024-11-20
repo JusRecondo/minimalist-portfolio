@@ -104,10 +104,9 @@ const {
 
     //Translation feature
     const langBtn = document.querySelector('#lang-btn')
+    const path = window.location.pathname
 
     langBtn?.addEventListener('click', () => {
-        const path = window.location.pathname
-
         if (path.includes('/es')) {
             window.location.pathname = '/'
         } else {
@@ -116,8 +115,7 @@ const {
     })
 
     downloadBtn?.addEventListener('click', () => {
-        const lang = window.location.pathname
-        const resume = lang === '/es' ? '/Jus-Recondo-CV.pdf' : '/Jus-Recondo-Resume.pdf' 
+        const resume = path.includes('/es') ? '/Jus-Recondo-CV.pdf' : '/Jus-Recondo-Resume.pdf' 
         window.open(resume, '_blank')
     })
 </script>
