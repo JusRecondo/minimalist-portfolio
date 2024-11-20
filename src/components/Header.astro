@@ -121,7 +121,8 @@ const {
 
     downloadBtn?.addEventListener('click', () => {
         const lang = window.location.pathname
-        const resume = lang === 'en' ? '/Jus-Recondo-Resume.pdf' : '/Jus-Recondo-CV.pdf' 
+        const resume = lang === '/es' ? '/Jus-Recondo-CV.pdf' : '/Jus-Recondo-Resume.pdf' 
+        debugger
         window.open(resume, '_blank')
     })
 </script>
